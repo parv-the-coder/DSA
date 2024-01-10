@@ -3,8 +3,7 @@ public class P3 {
         if (n == 0) {
             return 1;
         }
-        int ans = n * fact(n - 1);
-        return ans;
+        return n * fact(n - 1);
     }
 
     public static void main(String[] args) {
