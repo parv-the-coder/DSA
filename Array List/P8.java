@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class P8 {
     public static int Container(ArrayList<Integer> height) {
         int maxWater = 0;
-        // brute Force
+        // 2 Point Approach
         for (int i = 0; i < height.size(); i++) {
             for (int j = i + 1; j < height.size(); j++) {
                 int ht = Math.min(height.get(i), height.get(j));
