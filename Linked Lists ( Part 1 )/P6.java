@@ -88,7 +88,7 @@ public class P6 {
             return;
         }
         int i = 1;
-        int iToFind = size - n;
+        int iToFind = s - n;
         Node prev = head;
         while (i < iToFind) {
             prev = prev.next;
