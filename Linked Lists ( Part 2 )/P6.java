@@ -60,6 +60,20 @@ public class P6 {
         return val;
     }
 
+    public void reverse() {
+        Node curr = head;
+        Node prev = null;
+        Node next;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
+
     public static void main(String[] args) {
         P6 dll = new P6();
         dll.addFirst(4);
@@ -72,6 +86,8 @@ public class P6 {
         System.out.println(dll.removeFirst());
         dll.printLinkedList();
         System.out.println(dll.size);
+        dll.reverse();
+        dll.printLinkedList();
 
     }
 }
